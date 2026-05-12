@@ -231,8 +231,9 @@ textarea::placeholder{
 .player-section.mini .stage,
 .player-section.mini .controls,
 .player-section.mini .quick-actions,
-.player-section.mini .drag-hint{
-    display:none;
+.player-section.mini .drag-hint,
+.player-section.mini .player-progress-panel{
+    display:none !important;
 }
 
 .player-section.mini .player-title-row{
@@ -251,6 +252,15 @@ textarea::placeholder{
 .player-section.mini .song-artist{
     font-size:11px;
     margin-bottom:0;
+}
+
+.player-section.mini{
+    max-height:76px;
+    overflow:hidden;
+}
+
+.player-section.mini .player-title-row{
+    min-height:54px;
 }
 
 .drag-hint{
